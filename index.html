@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel · Bolsonarismo documentado</title>
+<meta name="description" content="Compilado de fatos com fonte ao lado: cronologia, 8 de janeiro, atos de ódio, paralelos históricos.">
+<meta property="og:title" content="Painel · Bolsonarismo documentado">
+<meta property="og:description" content="Compilado de fatos com a fonte ao lado de cada informação.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<script>try{const t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html">Bolsonarismo documentado</a>
+<nav class="pages"><a href="index.html" class=on>Painel</a><a href="cronologia.html">Cronologia</a><a href="8-de-janeiro.html">8 de janeiro</a><a href="atos-de-odio.html">Atos de ódio</a><a href="paralelos.html">Paralelos históricos</a><a href="nordeste.html">Nordeste e Senado</a><a href="corrupcao.html">Corrupção</a><a href="economia.html">Mercado e Constituição</a><a href="mensagens.html">Mensagens enviadas</a></nav><button class="themebtn" title="Alternar tema claro/escuro">◐</button></div></header>
+<main class="wrap"><section class="hero"><h1>Bolsonarismo documentado</h1><p class="sub">Compilado de fatos de 1999 a 2026, com a fonte ao lado de cada informação: 71 registros e 133 links para reportagens, decisões, documentos e vídeos.</p><div class="aviso">Compilado elaborado com auxílio de inteligência artificial (Claude, da Anthropic) a partir de reportagens, decisões judiciais, documentos oficiais e vídeos publicados. Cada informação traz a fonte ao lado; datas, números e citações foram conferidos nela. A classificação do bolsonarismo como fascismo é objeto de debate entre historiadores e aparece aqui como tal.</div></section><div class="cards"><a class="card" href="cronologia.html"><h3>Cronologia</h3><p>De 1999 a 2026, fato a fato, com vídeo</p><span class="n">17 registros →</span></a><a class="card" href="8-de-janeiro.html"><h3>8 de janeiro</h3><p>Havia liderança? Comando, mobilização, financiamento e execução</p><span class="n">9 registros →</span></a><a class="card" href="atos-de-odio.html"><h3>Atos de ódio</h3><p>Violência e discurso, com o desfecho de cada caso</p><span class="n">18 registros →</span></a><a class="card" href="paralelos.html"><h3>Paralelos históricos</h3><p>Hitler, Mussolini e o integralismo, com documentos traduzidos</p><span class="n">12 registros →</span></a><a class="card" href="nordeste.html"><h3>Nordeste e Senado</h3><p>Representação, voto de cabresto, o &quot;pacto&quot; e a indústria da seca</p><span class="n">6 registros →</span></a><a class="card" href="corrupcao.html"><h3>Corrupção</h3><p>Registros por partido: Mensalão, Lava Jato, Valdemar, Ciro</p><span class="n">6 registros →</span></a><a class="card" href="economia.html"><h3>Mercado e Constituição</h3><p>Adam Smith, marginalismo e o art. 170</p><span class="n">3 registros →</span></a><a class="card" href="mensagens.html"><h3>Mensagens enviadas</h3><p>Os textos de WhatsApp na íntegra, prontos para copiar</p><span class="n">9 mensagens →</span></a></div><div class="grid2"><div class="box"><h3>Critério, o mesmo em todas as páginas</h3><ol>
+<li>Só entra fato com fonte pública aberta: reportagem, decisão judicial, documento oficial ou vídeo.</li>
+<li>A fonte fica ao lado da informação, com o tipo indicado: <span class="tag src-v">Vídeo</span> <span class="tag src-r">Imprensa</span> <span class="tag src-o">Oficial</span>.</li>
+<li>Cada registro traz a situação atual: condenado, em apuração, arquivado. Caso arquivado também aparece, com o motivo.</li>
+<li>Frase que circula sem registro verificável fica de fora. Fato contestado aparece com o contraponto.</li></ol></div>
+<div class="box"><h3>Como ler os selos</h3><div class="legend"><span class="status s-def">Decisão definitiva</span><span class="status s-cond">Condenação (cabe recurso)</span><span class="status s-proc">Em apuração ou denunciado</span><span class="status s-arq">Arquivado ou rejeitado</span><span class="status s-hist">Registro histórico</span><span class="status s-fala">Registro em vídeo</span></div></div></div></main><footer><div class="wrap">Compilado elaborado com auxílio de inteligência artificial (Claude, da Anthropic) a partir de reportagens, decisões judiciais, documentos oficiais e vídeos publicados. Cada informação traz a fonte ao lado; datas, números e citações foram conferidos nela. A classificação do bolsonarismo como fascismo é objeto de debate entre historiadores e aparece aqui como tal.<br>Atualizado em 28/10/2026. Selos: verde = decisão definitiva; azul = condenação com recurso possível; âmbar = em apuração; cinza = arquivado ou rejeitado.</div></footer>
+<script>
+document.querySelectorAll('button.copy').forEach(b=>{
+  b.addEventListener('click',async()=>{
+    const t=document.getElementById(b.dataset.for).dataset.raw;
+    try{await navigator.clipboard.writeText(t);}catch(e){
+      const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();}
+    const o=b.textContent;b.textContent='Copiado';setTimeout(()=>b.textContent=o,1500);
+  });
+});
+const tb=document.querySelector('.themebtn');
+if(tb){tb.addEventListener('click',()=>{
+  const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  r.dataset.theme=dark?'light':'dark';try{localStorage.setItem('tema',r.dataset.theme)}catch(e){}
+});}
+</script></body></html>
